@@ -1,56 +1,12 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  color: red;
+  font-size: 16px;
+  color: #292b2c;
+  background: none;
+  background-size: cover;
 }
 
-/* Nav bar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  background-color: #333;
-  opacity: 0.8;
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  padding: 0 30px;
-  transition: 0.5s;
-}
-
-.navbar.top {
-  background: transparent;
-}
-
-.navbar a {
-  color: #fff;
-  margin: 0 5px;
-  padding: 10px 20px;
-}
-
-.navbar a:hover {
-  border-bottom: #28a745 2px solid;
-}
-
-.navbar nav ul {
-  display: flex;
-  flex-direction: row;
-  color: #fff;
-}
-
-.navbar .logo {
-  font-weight: 400;
-}
-
-/* Header */
 .hero {
-  background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+  background: url("../images/hero.jpg") no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #fff;
@@ -66,16 +22,20 @@ body {
   padding: 20px;
 }
 
-.hero .content h1 {
-  font-size: 55px;
-}
-
 .hero .content p {
   font-size: 23px;
   max-width: 600px;
   margin: 20px 0 30px;
 }
 
+.hero .content img {
+  border-radius: 50%;
+  width: 100;
+}
+
+.hero * {
+  z-index: 10;
+}
 .hero::before {
   content: "";
   position: absolute;
@@ -85,12 +45,91 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
+/********* Navbar Begins***********/
 
-.hero * {
-  z-index: 10;
+#navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-.hero.blog {
-  background: url("../images/home/blog.jpg") no-repeat center center/cover;
-  height: 30vh;
+.logo {
+  padding: 5px;
 }
+#logo-img {
+  width: 120px;
+}
+
+.block-display div {
+  margin: 30px;
+  display: block;
+  font-weight: 500;
+}
+
+#nav-list a:hover {
+  color: #ffbd59;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #192841;
+}
+
+.navbar-header button,
+.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 1px solid #192841;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #6c757d;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: max-content;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  /* text-decoration: none; */
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.show {
+  display: block;
+}
+
+/********* Navbar Ends***********/

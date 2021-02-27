@@ -11,21 +11,59 @@
 </head>
 <body>
     <header class="hero">
-        <div class="navbar top" id="navbar">
-            <h1 class="logo">
-                <span class="text-primary"><i class="fas fa-book-open"></i>Supriya Khadka
-            </h1>
-
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#cases">Cases</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navBar">
+          <div class="container">
+    
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#">
+                    <img src="/images/logoblack.png" id="logo-img" alt="logo" loading="lazy" >
+                </a>
+            </div>
+            <!-- Navbar Section -->
+            <div class="block-display">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" id="nav-list">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" style="padding-left: 40px;">About <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" style="padding-left: 40px;">Portfolio <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" style="padding-left: 40px;">Blog <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" style="padding-left: 40px;">Contact <span class="sr-only">(current)</span></a>
+                  </li>
                 </ul>
-            </nav>
+              </div>
+            </div>
+    
+    
+            <!-- Toggle Button Section -->
+            <div class="dropdown d-block d-lg-none menuList">
+              <button onclick="myFunction1()" class="dropbtn" id="menuList"><span class="navbar-toggler-icon" ></span></button>
+              <div id="myDropdown1" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+
+        </nav>
+        <div class="content">
+            <img src="/images/face.jpg" width="200">
+            <h1>Data Science Enthusiast . Developer . Designer</h1>
         </div>
-    </header>
+        <!-- Dropdown Script -->
+        <script src="/javascripts/index.js"></script>
+      </header>
     Here is how we start
 </body>
 </html>

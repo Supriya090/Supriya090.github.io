@@ -6,15 +6,15 @@ body {
 }
 
 .hero {
-  background: url("../images/hero.jpg") no-repeat center center/cover;
+  background-color: white;
   height: 100vh;
   position: relative;
-  color: #fff;
+  color: grey;
 }
 
 .hero .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -28,23 +28,27 @@ body {
   margin: 20px 0 30px;
 }
 
+.imageBack {
+  height: 290px;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
 .hero .content img {
   border-radius: 50%;
-  width: 100;
+  margin: 100px;
+  position: absolute;
+  top: 15%;
+  left: 23%;
 }
 
 .hero * {
   z-index: 10;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
+
 /********* Navbar Begins***********/
 
 #navBar {
@@ -52,6 +56,9 @@ body {
   top: 0;
   width: 100%;
   z-index: 999;
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3); */
+  color: gray;
+  background-color: transparent;
 }
 
 .logo {
@@ -64,11 +71,14 @@ body {
 .block-display div {
   margin: 30px;
   display: block;
-  font-weight: 500;
+  font-weight: bold;
 }
 
+#nav-list .nav-link {
+  color: #999da0;
+}
 #nav-list a:hover {
-  color: #ffbd59;
+  color: #371553;
 }
 
 .navbar-default .navbar-toggle {

@@ -26,7 +26,7 @@ body {
 .hero .content h1 {
   font-weight: 700;
 }
-.hero .content p {
+.hero .content span {
   font-size: 25px;
   max-width: 600px;
   margin: 20px 0 30px;
@@ -47,8 +47,8 @@ body {
   border-radius: 50%;
   margin-right: 100px;
   position: absolute;
-  top: 28%;
-  left: 14%;
+  top: 30%;
+  left: 17.8%;
 }
 
 .contentImage {

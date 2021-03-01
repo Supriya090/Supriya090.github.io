@@ -5,6 +5,41 @@ body {
   background-size: cover;
 }
 
+/******** Homepage Content Begins *********/
+
+/********* Navbar Begins***********/
+
+#navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3); */
+  color: gray;
+  background-color: transparent;
+}
+
+.logo {
+  padding: 5px;
+}
+#logo-img {
+  width: 120px;
+}
+
+.block-display div {
+  margin: 50px;
+  display: block;
+  font-weight: bold;
+}
+
+#nav-list .nav-link {
+  color: #999da0;
+}
+#nav-list a:hover {
+  color: #461165;
+}
+/********* Navbar Ends***********/
+
 .hero {
   background-color: white;
   height: 100vh;
@@ -20,12 +55,14 @@ body {
   text-align: center;
   height: 100%;
   padding: 20px;
+  margin-top: 10px;
   font-family: "Lora", serif;
 }
 
 .hero .content h1 {
   font-weight: 700;
 }
+
 .hero .content span {
   font-size: 25px;
   max-width: 600px;
@@ -59,97 +96,25 @@ body {
   z-index: 10;
 }
 
-/********* Navbar Begins***********/
-
-#navBar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3); */
-  color: gray;
-  background-color: transparent;
-}
-
-.logo {
-  padding: 5px;
-}
-#logo-img {
-  width: 120px;
-}
-
-.block-display div {
-  margin: 40px;
-  display: block;
-  font-weight: bold;
-}
-
-#nav-list .nav-link {
-  color: #999da0;
-}
-#nav-list a:hover {
-  color: #461165;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: #192841;
-}
-
-.navbar-header button,
-.navbar-toggle,
-.navbar-header .icon-bar {
-  border: 1px solid #192841;
-}
-
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-
-.dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 8px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: #6c757d;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
+.object {
+  animation: MoveUpDown 1.5s linear infinite;
   position: absolute;
-  background-color: #f1f1f1;
-  width: max-content;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  left: 850px;
+  top: 375px;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  /* text-decoration: none; */
-  display: block;
+.object img {
+  width: 40px;
 }
 
-.dropdown a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  text-decoration: none;
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
 }
 
-.show {
-  display: block;
-}
-
-/********* Navbar Ends***********/
+/******** Homepage Content Ends*********/

@@ -16,7 +16,8 @@ body {
   z-index: 999;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3); */
   color: gray;
-  background-color: transparent;
+  font-family: "Lora", serif;
+  background-color: white;
 }
 
 .logo {
@@ -27,7 +28,7 @@ body {
 }
 
 .block-display div {
-  margin: 50px;
+  margin: 20px 0px 20px 0px;
   display: block;
   font-weight: bold;
 }
@@ -117,4 +118,53 @@ body {
   }
 }
 
-/******** Homepage Content Ends*********/
+/******** Homepage Content Ends *********/
+
+/******* About Me Content Begins ********/
+.aboutme {
+  text-align: center;
+  font-family: "Lora", serif;
+}
+
+.aboutme h1 {
+  font-weight: bold;
+  color: #461165;
+}
+
+.aboutme p {
+  padding: 10px 70px 10px 70px;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+.social a {
+  color: #6c757d;
+  padding: 5px;
+  border-radius: 10%;
+  font-size: 25px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.social a:hover {
+  color: #461165;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+.resumeButton {
+  padding: 8px 25px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #6c757d;
+  border-radius: 5px;
+  color: white;
+}
+
+.resumeButton:hover {
+  text-decoration: none;
+  background-color: #461165;
+  color: white;
+}
+/******* About Me Content Ends ********/

@@ -9,6 +9,9 @@ body {
   background-size: cover;
 }
 
+.hidden {
+  display: none;
+}
 /******** Homepage Content Begins *********/
 
 /********* Navbar Begins***********/
@@ -231,13 +234,13 @@ h6 {
   animation: progress-animation3 2s infinite;
 }
 
-.ani5 {
+/* .ani5 {
   animation: progress-animation5 2s infinite;
 }
 
 .ani6 {
   animation: progress-animation6 2s infinite;
-}
+} */
 
 @keyframes progress-animation1 {
   0% {
@@ -269,7 +272,7 @@ h6 {
   }
 }
 
-@keyframes progress-animation5 {
+/* @keyframes progress-animation5 {
   0% {
     width: 0%;
   }
@@ -287,5 +290,37 @@ h6 {
   100% {
     width: 90%;
   }
-}
+} */
+
 /******* About Me Content Ends ********/
+
+/******* Portfolio Content Begins ********/
+.portfolio {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.portfolio h2 {
+  margin-bottom: 30px;
+}
+
+.portfolio .card {
+  margin-top: 30px;
+}
+.pageBtn {
+  padding: 8px 25px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  font-size: 15px;
+  border: none;
+  background-color: #6c757d;
+  border-radius: 5px;
+  color: white;
+}
+
+.pageBtn:hover {
+  text-decoration: none;
+  background-color: #461165;
+  color: white;
+}
+/******* Portfolio Content Ends ********/

@@ -11,9 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-1.9.1.min.js"></script>
 
 </head>
 <body>
+  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+<script type="text/javascript">
+        
+      </script>
     <header class="hero">
         <nav class="navbar navbar-expand-lg navbar-dark" id="navBar">
           <div class="container">
@@ -133,7 +138,7 @@
                           <div class="progress-bar ani1" style="width:50%"></div>
                         </div>
                       </div> 
-                      <div class="col-xl-6">
+                      <!-- <div class="col-xl-6">
                         <span class="nameSpan">Violin</span>
                         <span class="percentSpan" data-target="1">0</span>
                         <div class="progress">
@@ -146,14 +151,125 @@
                         <div class="progress">
                           <div class="progress-bar ani6" style="width:90%"></div>
                         </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio" class="portfolio">
+              <h2 style="font-weight: bold;">Portfolio</h2>
+                <button id="showPage1Btn" data-launch-view="page1" class="pageBtn">Web</button>
+                <button id="showPage2Btn" data-launch-view="page2" class="pageBtn">Data Science</button>
+                <button id="showPage3Btn" data-launch-view="page3" class="pageBtn">Simple Games</button>
+                <button id="showPage4Btn" data-launch-view="page4" class="pageBtn">Android</button>
+
+                <div class="view" id="page1">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                       </div>
                     </div>
-              </div>
-          </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    
+                <div class="view hide hidden" id="page2">
+                    <h3>Hopefully Soon!</h3>
+                </div>
             
-            </div>
-        </div>
+                <div class="view hide hidden" id="page3">
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="view hide hidden" id="page4">
+                  <div class="card mb-3" style=" margin: 50px 250px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="..." alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        
         <!-- Text Animation Script -->
         <script src="/javascripts/introAnimation.js"></script>
 
@@ -165,5 +281,8 @@
         </script>
 
         <script src="/javascripts/counter.js"></script>
+        <script src="/javascripts/pageChange.js"></script>
+
+        
 </body>
 </html>

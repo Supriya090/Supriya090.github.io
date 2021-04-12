@@ -323,4 +323,109 @@ h6 {
   background-color: #461165;
   color: white;
 }
+
+.pageBtn:active {
+  background-color: #461165;
+}
+.imagesMain {
+  padding: 0;
+  text-align: center;
+}
+.imagebox {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 250px;
+  width: 250px;
+}
+
+.imagebox img {
+  vertical-align: middle;
+  height: 250px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.caption {
+  width: 500px;
+  height: 250px;
+  background: rgb(142, 36, 170);
+  background: radial-gradient(
+    circle,
+    rgba(142, 36, 170, 0.7315301120448179) 40%,
+    rgba(60, 20, 140, 1) 87%
+  );
+  opacity: 0;
+  position: absolute;
+  left: 35px;
+  top: 0px;
+  border-radius: 10px;
+}
+
+.imagebox:hover .caption {
+  opacity: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  padding: 20px;
+}
+
+.imagebox:hover .caption a {
+  color: white;
+  text-decoration: none;
+  float: left;
+}
+
+.imagebox:hover .caption a:hover {
+  transform: scale(1.1);
+}
+.game img {
+  width: 250px;
+}
+
+.gameCap {
+  width: 250px;
+  left: 17px;
+}
+
+.mobile {
+  height: 300px;
+  width: 170px;
+}
+
+.android {
+  margin-left: 25%;
+}
+
+.mobTitle {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.mobPara {
+  padding: 10px;
+}
+
+.capIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+}
+.capCam {
+  background-color: white;
+  border-radius: 50%;
+  color: rgba(60, 20, 140, 1);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.capCam:hover {
+  text-decoration: none;
+  color: rgb(142, 36, 170);
+  transform: scale(1.2);
+}
+
 /******* Portfolio Content Ends ********/

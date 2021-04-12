@@ -33,19 +33,19 @@
             <div class="block-display">
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto" id="nav-list">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="/" style="color: #461165;">Home <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#" style="padding-left: 40px;">About <span class="sr-only">(current)</span></a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about" style="padding-left: 40px;">About <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#" style="padding-left: 40px;">Portfolio <span class="sr-only">(current)</span></a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio" style="padding-left: 40px;">Portfolio <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="#" style="padding-left: 40px;">Blog <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="#" style="padding-left: 40px;">Contact <span class="sr-only">(current)</span></a>
                   </li>
                 </ul>
@@ -58,9 +58,9 @@
               <button onclick="myFunction1()" class="dropbtn" id="menuList"><span class="navbar-toggler-icon" ></span></button>
               <div id="myDropdown1" class="dropdown-content">
                 <a href="#">Home</a>
-                <a href="#about">About</a>
+                <a href="#">About</a>
                 <a href="#">Portfolio</a>
-                <a href="#about">Blog</a>
+                <a href="#">Blog</a>
                 <a href="#">Contact</a>
               </div>
             </div>
@@ -165,44 +165,45 @@
                 <button id="showPage4Btn" data-launch-view="page4" class="pageBtn">Android</button>
 
                 <div class="view" id="page1">
-                  <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
+                  <div class="imagesMain row" >
+                    <div class="imagebox col-sm">
+                       <img src="./images/projects/Web/meroLedger/Picture1.png">
+                        <div class="caption">
+                          <div class="capIcon">
+                            <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/meroLedger" target="blank"></a>
+                          </div>
+                          <a href="#" style="color: white;">Mero Ledger</a>
+                        </div>             
                     </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
+                    <div class="imagebox col-sm">
+                       <img src="./images/projects/Web/SaralKanoon/1.png">
+                        <div class="caption">
+                          <div class="capIcon">
+                            <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/SaralKanoon" target="blank"></a>
+                          </div>
+                          <a href="#" style="color: white;">Saral Kanoon</a>
+                        </div>             
                     </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <div class="imagebox col-sm">
+                      <img src="./images/projects/Web/restaurantApp/1.png">
+                       <div class="caption">
+                        <div class="capIcon">
+                          <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/RestaurantApp" target="blank"></a>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" style="color: white;">Restaurant App</a>
+                       </div>             
+                   </div>
+                    <div class="imagebox col-sm">
+                      <img src="./images/projects/Web/covid/covid1.png">
+                       <div class="caption">
+                        <div class="capIcon">
+                          <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/COVID-19-Info" target="blank"></a>
                         </div>
-                      </div>
-                    </div>
+                        <a href="#" style="color: white;">Covid-19 Info</a>
+                        </div>             
+                   </div>
                   </div>
+                
                 </div>
                     
                 <div class="view hide hidden" id="page2">
@@ -210,56 +211,52 @@
                 </div>
             
                 <div class="view hide hidden" id="page3">
-                  <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
+                  <div class="imagesMain row">
+                    <div class="imagebox game col">
+                      <img src="./images/projects/Games/arthur.png">
+                       <div class="caption gameCap"><div class="capIcon">
+                        <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/Arthur-The-Gladiator" target="blank"></a>
                       </div>
+                      <a href="#" style="color: white; float: unset;">Arthur - The Gladiator</a></div>             
+                   </div>
+                    <div class="imagebox game col">
+                       <img src="./images/projects/Games/tetris.png">
+                        <div class="caption gameCap">
+                          <div class="capIcon">
+                            <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/Tetris_Cpp" target="blank"></a>
+                          </div>
+                          <a href="#" style="color: white; float: unset;">Tetris</a>
+                        </div>             
                     </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
+                    <div class="imagebox game col">
+                       <img src="./images/projects/Games/sudoku.png">
+                        <div class="caption gameCap">
+                          <div class="capIcon">
+                            <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/Sudoku" target="blank"></a>
+                          </div>
+                          <a href="#" style="color: white; float: unset;">Sudoku</a>
+                        </div>             
                     </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <div class="imagebox game col">
+                       <img src="./images/projects/Games/doyouknowme.png">
+                        <div class="caption gameCap"><div class="capIcon">
+                          <a class="fa fa-github capCam" style="font-size: 30px; color: rgba(60, 20, 140, 1);" href="https://github.com/Supriya090/DoYouKnowMe" target="blank"></a>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
+                        <a href="#" style="color: white; float: unset;">Do You Know Me?</a></div>             
                     </div>
                   </div>
                 </div>
 
                 <div class="view hide hidden" id="page4">
-                  <div class="card mb-3" style=" margin: 50px 250px;">
-                    <div class="row g-0">
+                  <div class="card android" style="max-width: 500px; ">
+                    <div class="row">
                       <div class="col-md-4">
-                        <img src="..." alt="...">
+                        <img src="./images/projects/Android/1.png" alt="..." class="mobile">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <h5 class="card-title mobTitle">Namaskar</h5>
+                          <p class="card-text mobPara" style="padding: 5px 15px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
                       </div>
@@ -268,7 +265,6 @@
                 </div>
             </div>
           </div>
-
         
         <!-- Text Animation Script -->
         <script src="/javascripts/introAnimation.js"></script>
@@ -279,7 +275,7 @@
             window.scrollBy(0, 510);
           }
         </script>
-
+        <script src="/javascripts/slideshow.js"></script>
         <script src="/javascripts/counter.js"></script>
         <script src="/javascripts/pageChange.js"></script>
 

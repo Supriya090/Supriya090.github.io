@@ -40,6 +40,18 @@ body {
   font-weight: bold;
 }
 
+#nav-list a {
+  -webkit-transition: 0.5s all ease-out;
+  -moz-transition: 0.5s all ease-out;
+  transition: 0.5s all ease-out;
+  border-top: 3px solid white;
+}
+
+#nav-list li.active a {
+  border-top: 3px solid #461165;
+  color: #461165;
+}
+
 #nav-list .nav-link {
   color: #999da0;
 }
@@ -79,15 +91,6 @@ body {
   font-style: italic;
 }
 
-.imageBack {
-  height: 290px;
-  width: 270px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: relative;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-}
-
 .hero .content img {
   border-radius: 50%;
   margin-right: 100px;
@@ -95,9 +98,22 @@ body {
   top: 30%;
   left: 17.8%;
 }
-
+.imageBack {
+  height: 290px;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
 .contentImage {
   margin-right: 120px;
+}
+
+.contentImage img {
+  border-radius: 100%;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  margin-right: 100px;
 }
 
 .hero * {
@@ -386,7 +402,7 @@ h6 {
 
 .gameCap {
   width: 250px;
-  left: 17px;
+  left: 65px;
 }
 
 .mobile {
@@ -446,3 +462,133 @@ h6 {
   margin-top: 80px;
 }
 /******* Blog Content Ends ********/
+
+/****** Responsiveness ******/
+@media (max-width: 1300px) {
+  .object a img {
+    display: none;
+  }
+}
+
+/******Medium Devices Only*****/
+@media (max-width: 1199px) {
+  .contentImage img {
+    height: 250px;
+    width: 235px;
+  }
+
+  .contentText h1 {
+    font-size: 35px;
+  }
+
+  .hero .content span {
+    font-size: 20px;
+  }
+
+  .percentSpan {
+    margin-right: 0;
+  }
+
+  .proj-progress-card .progress {
+    width: 100%;
+  }
+
+  .caption {
+    left: 230px;
+  }
+
+  .gameCap {
+    left: 35px;
+  }
+}
+
+/******Small Devices Only*****/
+@media (min-width: 768px) and (max-width: 991px) {
+  .caption {
+    left: 110px;
+  }
+
+  .gameCap {
+    left: 55px;
+  }
+}
+
+/******Extra Small Devices Only*****/
+@media (max-width: 767px) {
+  .hero{
+    height: 80vh;
+  }
+  
+  .hero .content{
+    flex-direction: column;
+   }
+
+  .imageBack{
+    width: 0;
+    height: 480px;
+  }
+ 
+  .contentText h1 {
+    font-size: 32px;
+  }
+
+  .hero .content span {
+    font-size: 18px;
+  }
+
+  .contentImage img {
+    height: 250px;
+    width: 235px;
+    margin-left: 8%  
+  }
+
+  .aboutme{
+    margin-top: 120px;
+  }
+
+  .imagebox img{
+    width: 440px;
+    height: 250px;
+  }
+
+  .caption {
+    width: 440px;
+    height: 250px;
+    left: 22px;
+  }
+
+  .game img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .gameCap {
+    width: 250px;
+    height: 250px;
+    left: 117px;
+  }
+  
+/*****Extra extra small devices****/
+@media (max-width: 479px) {
+  .imagebox img{
+    width: 380px;
+    height: 250px;
+  }
+
+  .game img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .caption {
+    width: 380px;
+    height: 250px;
+    left: 15px;
+  }
+
+  .gameCap {
+    width: 250px;
+    height: 250px;
+    left: 80px;
+  }
+}

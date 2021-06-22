@@ -48,8 +48,7 @@ body {
   font-size: 18px;
 }
 
-#nav-list li.active a {
-  border-top: 3px solid #461165;
+#nav-list li a.active {
   color: #461165;
 }
 
@@ -185,6 +184,15 @@ body {
 /******** Homepage Content Ends *********/
 
 /******* About Me Content Begins ********/
+.container.aboutme::before {
+  display: block;
+  content: " ";
+  margin-top: -160px;
+  height: 160px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .aboutme {
   text-align: center;
   font-family: "Lora", serif;
@@ -324,6 +332,15 @@ h6 {
 /******* About Me Content Ends ********/
 
 /******* Portfolio Content Begins ********/
+.portfolio::before {
+  display: block;
+  content: " ";
+  margin-top: -120px;
+  height: 120px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .portfolio {
   margin-top: 80px;
   margin-bottom: 40px;
@@ -461,6 +478,15 @@ h6 {
 /******* Portfolio Content Ends ********/
 
 /******* Blog Content Begins ********/
+.blogs::before {
+  display: block;
+  content: " ";
+  margin-top: -120px;
+  height: 120px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .cardFoot {
   font-family: "Montserrat", sans-serif;
   float: right;

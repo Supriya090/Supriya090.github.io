@@ -509,6 +509,82 @@ h6 {
 }
 /******* Blog Content Ends ********/
 
+/******* Contact Us Begins ********/
+.footer {
+  color: white;
+  background-color: #6c757d;
+  font-family: Lora, serif;
+  text-align: center;
+}
+
+.container.contact-us {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn.btn-primary.send {
+  background-color: transparent;
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn.btn-primary.send:hover {
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-us .contact-form {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.contact-form form {
+  margin-top: 30px;
+}
+
+.contact-form form .form-group {
+  display: flex;
+}
+
+.contact-form form .form-group label {
+  width: 80px;
+  text-align: left;
+}
+
+.contact-form form .form-group input {
+  width: 250px;
+  font-size: 14px;
+}
+
+.contact-form form .form-group textarea {
+  width: 250px;
+  font-size: 14px;
+}
+
+.alert.alert-success.thankyou_message {
+  position: absolute;
+  top: 40%;
+  right: 9%;
+  text-align: center;
+  width: 300px;
+}
+
+.alert.alert-success.thankyou_message button:focus {
+  outline: none;
+}
+
+hr {
+  display: none;
+}
+/******* Contact Us Ends ********/
+
 /****** Responsiveness ******/
 @media (max-width: 1300px) {
   .object a img {
@@ -559,6 +635,15 @@ h6 {
 
   .gameCap {
     left: 55px;
+  }
+
+  .container.contact-us {
+    flex-direction: column;
+  }
+
+  hr#hrId {
+    display: block;
+    margin: 40px 0px;
   }
 }
 
@@ -619,6 +704,15 @@ h6 {
     height: 250px;
     left: 145px;
   }
+
+  .container.contact-us {
+    flex-direction: column;
+  }
+
+  hr#hrId {
+    display: block;
+    margin: 40px 0px;
+  }
 }
 
 /*****Extra extra small devices****/
@@ -643,5 +737,9 @@ h6 {
     width: 250px;
     height: 250px;
     left: 80px;
+  }
+
+  .container.contact-us {
+    flex-direction: column;
   }
 }

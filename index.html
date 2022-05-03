@@ -457,58 +457,124 @@
       <!-- Portfolio Section Ends -->
 
       <!-- Involvement Section Begins -->
-      <div class="skill">
+      <div class="experience">
         <h2 style="font-weight: bold">Involvements and Experiences</h2>
-        <!-- <div class="list-group" id="myList" role="tablist">
-          <a
-            class="list-group-item list-group-item-action active"
-            data-toggle="list"
-            href="#home"
-            role="tab"
-            >Home</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            data-toggle="list"
-            href="#profile"
-            role="tab"
-            >Profile</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            data-toggle="list"
-            href="#messages"
-            role="tab"
-            >Messages</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            data-toggle="list"
-            href="#settings"
-            role="tab"
-            >Settings</a
-          >
+        <div class="row exp-tabs">
+          <div class="list-group tab col-4" id="list-tab" role="tablist">
+            <button
+              class="list-group-item list-group-item-action tablinks active"
+              onclick="openCity(event, 'London')"
+            >
+              Home
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks active"
+              onclick="openCity(event, 'Paris')"
+            >
+              Paris
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks active"
+              onclick="openCity(event, 'Tokyo')"
+            >
+              Tokyo
+            </button>
+          </div>
+
+          <div class="col-8">
+            <div id="London" class="tabcontent">
+              <h3>London</h3>
+              <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="tab-content">
-          <div class="tab-pane active" id="home" role="tabpanel">a</div>
-          <div class="tab-pane" id="profile" role="tabpanel">b</div>
-          <div class="tab-pane" id="messages" role="tabpanel">c</div>
-          <div class="tab-pane" id="settings" role="tabpanel">d</div>
-        </div> -->
-
         <script>
-          $("#myList a").on("click", function (e) {
-            e.preventDefault();
-            $(this).tab("show");
-          });
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(
+                " active",
+                ""
+              );
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
         </script>
       </div>
       <!-- Involvement Section Ends -->
 
       <!-- Award Section Begins -->
-      <div class="skill">
+      <div class="award">
         <h2 style="font-weight: bold">Scholarships and Awards</h2>
+        <table class="table table-bordered award-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 60%">Award/Scholarship</th>
+              <th scope="col" style="width: 30%">Awarded By</th>
+              <th scope="col" style="width: 10%">Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hack-A-Week Winner (Category - FinTech)</td>
+              <td>LOCUS</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>
+                Full Scholarship Recipient of NAAMI Winter School of AI, 2021
+              </td>
+              <td>NAAMI</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>
+                Ncell Excellence Scholarship - Yearwise Top Female Student
+              </td>
+              <td>Ncell</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Grace Hopper Celebration Student Scholar</td>
+              <td>AnitaB.org</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Women Leaders in Technology Fellowship 2020/21</td>
+              <td>WLiT Nepal</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>
+                Ncell Excellence Scholarship - Yearwise Top Female Student
+              </td>
+              <td>Ncell</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>Rajan Karki Memorial Outstanding Student Award</td>
+              <td>St. Xavier's College, Maitighar</td>
+              <td>2018</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <!-- Award Section Ends -->
 

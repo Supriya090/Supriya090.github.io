@@ -538,6 +538,17 @@ h6 {
 h6 {
   text-align: center;
 }
+
+.youtube-nos {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.youtube-nos iframe {
+  width: 45%;
+}
 /******* Experience Content Ends ********/
 
 /******* Blog Content Begins ********/

@@ -110,7 +110,7 @@
           <span
             class="txt-rotate"
             data-period="2000"
-            data-rotate='[ "NLP Enthusiast", "Conversational AI Engineer", "Bibliophile"]'
+            data-rotate='[ "NLP Researcher", "Conversational AI Engineer", "Bibliophile"]'
           ></span>
         </div>
       </div>
@@ -120,21 +120,11 @@
       <br />
       <p>
         I am a Computer Engineering Graduate, currently working as <strong>Conversational AI Engineer</strong> 
-        at <strong>Diyo AI</strong>. My work is an intersection of Natural Language Processing and Conversational Design.
-        I love buying novels, reading novels and talking about novels in my free time. I also enjoy watching movies and series, 
-        designing and singing.
+        at <strong><a href="https://diyo.ai/" target="_blank">Diyo AI</a></strong>. My work is an intersection of Natural Language Processing and Conversational Design. Currently, I am researching how to make large language models(LLMs) robust for low-resource languages like Nepali. <br><br>
+        
+        I love buying novels, reading novels and talking about novels in my free time. I also enjoy watching movies and series. If you want to talk about NLP, books or movies, hit me up!
       </p>
       <div class="social">
-        <a
-          class="fa fa-facebook"
-          href="https://www.facebook.com/sophiya.khadka.9/"
-          target="_blank"
-        ></a>
-        <a
-          class="fa fa-twitter"
-          href="https://twitter.com/SupriyaKhadka1"
-          target="_blank"
-        ></a>
         <a
           class="fa fa-linkedin"
           href="https://www.linkedin.com/in/supriyakhadka/"
@@ -143,6 +133,11 @@
         <a
           class="fa fa-github"
           href="https://github.com/Supriya090"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-graduation-cap"
+          href="https://scholar.google.com/citations?user=lAtsr4cAAAAJ&hl=en&authuser=3"
           target="_blank"
         ></a>
         <a
@@ -155,6 +150,16 @@
           href="https://www.instagram.com/khadkasupriya76/?hl=en"
           target="_blank"
         ></a>
+        <a
+        class="fa fa-facebook"
+        href="https://www.facebook.com/sophiya.khadka.9/"
+        target="_blank"
+      ></a>
+      <a
+        class="fa fa-twitter"
+        href="https://twitter.com/SupriyaKhadka1"
+        target="_blank"
+      ></a>
       </div>
 
       <div class="buttonDiv">
@@ -210,18 +215,18 @@
     </div> -->
       <div id="portfolio" class="portfolio">
         <h2 style="font-weight: bold">Portfolio</h2>
+        <button id="showPage2Btn" data-launch-view="page2" class="pageBtn activeBtn">
+          Machine Learning
+        </button>
         <button
           id="showPage1Btn"
           data-launch-view="page1"
-          class="pageBtn activeBtn"
+          class="pageBtn"
         >
           Web
         </button>
-        <button id="showPage2Btn" data-launch-view="page2" class="pageBtn">
-          Machine Learning
-        </button>
         <button id="showPage3Btn" data-launch-view="page3" class="pageBtn">
-          Simple Games
+          Games
         </button>
         <button id="showPage4Btn" data-launch-view="page4" class="pageBtn">
           Blockchain
@@ -230,7 +235,7 @@
           Android
         </button>
 
-        <div class="view" id="page1">
+        <div class="view hide hidden" id="page1">
           <div class="imagesMain row">
             <div class="imagebox col-sm">
               <img src="./images/projects/Web/meroLedger/Picture1.png" />
@@ -302,12 +307,67 @@
           </div>
         </div>
 
-        <div class="view hide hidden" id="page2">
+        <div class="view" id="page2">
           <!-- <div class="card android" style="max-width: 500px"> -->
           <div class="row">
             <!-- <div class="col-md-4">
               <img src="./images/projects/DataScience/covid.png" alt="..." class="mobile">
             </div> -->
+            <div class="card data-science col-sm">
+              <div class="card-body">
+                <h5 class="card-title mobTitle">
+                  Nepali Text-to-Speech System
+                </h5>
+
+                <p class="card-text mobPara" style="padding: 5px 15px">
+                  Natural sounding Nepali Text-to-Speech system. Finetuned on our own data, available <a href="https://openslr.elda.org/143/" target="_blank">here</a>.
+                </p>
+
+                <hr style="height: 1px; display: block" />
+                Built using Tacotron-2 architecture (for spectrogram generation) and Hifi-GAN and WaveGlow (for vocoder), all of which implemented in PyTorch.
+
+                <p class="card-text">
+                  <a
+                    href="https://shruti-audios.netlify.app"
+                    target="blank"
+                    >Audio Samples</a
+                  > <br>
+                  <a
+                    href="https://gitlab.com/shrutiaudio/shrutiapplication"
+                    target="blank"
+                    > Code </a
+                  > | 
+                  <a
+                    href="https://sigul-2023.ilc.cnr.it/wp-content/uploads/2023/08/15_Paper-compressed.pdf"
+                    target="blank"
+                    >Paper</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card data-science col-sm">
+              <div class="card-body">
+                <h5 class="card-title mobTitle">
+                  NepaliSense DistillBERT
+                </h5>
+
+                <p class="card-text mobPara" style="padding: 5px 15px">
+                  A Nepali variant of DistillBERT for sentence embeddings, drawing inspiration from the
+                  paper <i><a href="https://arxiv.org/abs/2004.09813" target="blank">Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation.</a></i>
+                </p>
+
+                <hr style="height: 1px; display: block" />
+                Utilized a student-teacher model requiring a parallel Nepali-English corpus for training. Training data was sourced from the TED2020 corpus.
+
+                <p class="card-text">
+                  <a
+                    href="https://github.com/Supriya090/NepaliSense-DistillBERT"
+                    target="blank"
+                    >View Code</a
+                  >
+                </p>
+              </div>
+            </div>
             <div class="card data-science col-sm">
               <div class="card-body">
                 <h5 class="card-title mobTitle">
@@ -333,6 +393,11 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="row">
+            <!-- <div class="col-md-4">
+              <img src="./images/projects/DataScience/covid.png" alt="..." class="mobile">
+            </div> -->
             <div class="card data-science col-sm">
               <div class="card-body">
                 <h5 class="card-title mobTitle">
@@ -367,6 +432,11 @@
 
                 <hr style="height: 1px; display: block" />
                 Displays Confirmed Cases, Recovered Cases and Death Cases
+                <div style="display: flex; justify-content: space-evenly">
+                  <img src="./images/projects/DataScience/nepal.png" width="150px" style="padding: 5px;"/>
+                  <img src="./images/projects/DataScience/us.png" width="150px" style="padding: 5px;"/>
+                  <img src="./images/projects/DataScience/world.png" width="150px" style="padding: 5px;"/>
+                </div>
                 <p class="card-text">
                   <a
                     href="https://github.com/Supriya090/CovidTrendAnalysis"
@@ -452,7 +522,10 @@
                     target="blank"
                   ></a>
                 </div>
+                <div style="display: flex; justify-content: space-between;">
                 <a href="#" style="color: white">D-Shelf</a>
+                <a href="https://www.researchgate.net/profile/Supriya-Khadka-3/publication/370451251_Decentralized_Book_Publishing_Platform_using_Blockchain_and_IPFS_An_NFT-based_Solution_to_Royalty_Theft/links/6451029f97449a0e1a703da6/Decentralized-Book-Publishing-Platform-using-Blockchain-and-IPFS-An-NFT-based-Solution-to-Royalty-Theft.pdf" style="color: white; text-align: right;" target="_blank">Paper</a>
+                </div>
               </div>
             </div>
 
@@ -479,29 +552,41 @@
         </div>
 
         <div class="view hide hidden" id="page5">
-          <div class="card android" style="max-width: 500px">
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="./images/projects/Android/1.png"
-                  alt="..."
-                  class="mobile"
-                />
+          <div style="display: flex; justify-content: space-around">
+            <div class="card" style="display: flex; flex-direction: row; max-width: 540px;">
+              <div class="card-header">
+                <!-- <img src="//placehold.it/200" alt="" /> -->
+                  <img src="./images/projects/Android/shruti.jpeg" width="160px" alt="" />
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title mobTitle">Namaskar</h5>
-                  <p class="card-text mobPara" style="padding: 5px 15px">
-                    Android App which provides a platform to explore Nepalese
-                    culture and opportunities to interact with the heritage<br />
-                    Built using Flutter as SDK and Firebase as Database
-                  </p>
-                  <p class="card-text">
-                    <a href="https://github.com/Supriya090/Namaskar"
-                      >View Code</a
-                    >
-                  </p>
-                </div>
+              <div class="card-block px-2">
+                  <h4 class="card-title mobTitle">Shruti</h4>
+                  <p class="card-text mobPara" style="padding: 5px 15px">Mobile application featuring integrated Nepali Text-to-Speech for audiobook functionality, built using React Native<br/> <br/>
+                    Has in-built PDF Reader, TTS Interface, Book Reader, Audiobook Collection section and Built-in Audio Player</p>
+                    <p class="card-text">
+                      <a href="https://gitlab.com/shrutiaudio/shrutiapplication"
+                        >Code</a
+                      > | 
+                      <a href="https://elibrary.tucl.edu.np/handle/123456789/18849"
+                        >Report</a
+                      >
+                    </p>
+              </div>
+            </div>
+            <div class="card" style="display: flex; flex-direction: row; max-width: 540px;">
+              <div class="card-header">
+                <!-- <img src="//placehold.it/200" alt="" /> -->
+                  <img src="./images/projects/Android/1.png" width="160px" alt="" />
+              </div>
+              <div class="card-block px-2">
+                  <h4 class="card-title mobTitle">Namaskar</h4>
+                  <p class="card-text mobPara" style="padding: 5px 15px">Android App which provides a platform to explore Nepalese
+                    culture and opportunities to interact with the heritage<br/> <br/>
+                    Built using Flutter as SDK and Firebase as Database</p>
+                    <p class="card-text">
+                      <a href="https://github.com/Supriya090/Namaskar"
+                        >View Code</a
+                      >
+                    </p>
               </div>
             </div>
           </div>
@@ -510,23 +595,112 @@
       <!-- Portfolio Section Ends -->
 
       <!-- Involvement Section Begins -->
+      <!-- Professional Experience Section Begins -->
       <div class="experience">
-        <h2 style="font-weight: bold">Involvements and Experiences</h2>
+        <h2 style="font-weight: bold">Professional Experiences</h2>
         <div class="row exp-tabs">
           <div class="list-group tab col-4" id="list-tab" role="tablist">
             <button
               class="list-group-item list-group-item-action tablinks active"
-              onclick="openCity(event, 'github')"
+              onclick="openCity(event, 'diyoai')"
             >
-              <strong>Planning Coordinator</strong><br />
-              Github Field Day Nepal 2022
+              <strong>Conversational AI Engineer</strong><br />
+              Diyo.AI
             </button>
             <button
               class="list-group-item list-group-item-action tablinks"
-              onclick="openCity(event, 'hult')"
+              onclick="openCity(event, 'wlit_teach')"
             >
-              <strong>Event Manager</strong><br />
-              Hult Prize at IOE, Pulchowk Campus 2022
+              <strong>Technical Facilitator</strong><br />
+              Women Leaders in Technology
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks"
+              onclick="openCity(event, 'rara')"
+            >
+              <strong>Computer Vision Research Engineer</strong><br />
+              Rara Labs (Contract)
+            </button>
+          </div>
+
+          <div class="col-8">
+            <div id="diyoai" class="tabcontent" style="display: block">
+              <h5><strong>Conversational AI Engineer</strong></h5>
+              <h6>Diyo.AI (May 2023 - <strong>present</strong>)</h6>
+              <ul style="margin-top: 30px">
+                <li>
+                  Building multilingual chatbots tailored for domains such as <a href="https://llmchatbot.github.io/" target="_blank">sexual and maternal reproductive health</a>, safe abortion, <a href="https://www.facebook.com/messages/t/1479259962357782" target="_blank">e-governance</a>, and sales.
+                </li>
+                <li>
+                  Researching and implementing large language models like GPT3.5, Llama2, BLOOM and Okapi to develop and improve conversational models and their language understanding capability for low resource languages like Nepali
+                </li>
+                <li>Analyzing user feedback and data to refine and optimize chatbot performance iteratively.</li>
+                <li>Successfully pitched about Diyo.AI at <a href="https://youtu.be/Tk35ikj8hAY?t=431" target="_blank">ICT Startup Awards 2023</a>, securing a place in the top
+                  5 finalists.</li>
+              </ul>
+            </div>
+
+            <div id="rara" class="tabcontent">
+              <h5><strong>Computer Vision Research Engineer</strong></h5>
+              <h6>Rara Labs (Jan 2023 - Mar 2023) (Contract)</h6>
+              <ul style="margin-top: 30px">
+                <li>
+                  Worked on the discovery phase of implementing <a href="https://www.frontiertechhub.org/pilot-portfolio/ruralwaterschemes-nepal" target="_blank"><i>AI for NWash</i></a>, a project initiated by the <strong>Ministry of Water Supply</strong>, Nepal in collaboration with the <strong>British Embassy</strong>, <strong>Frontier Tech</strong> and <strong>Rara Labs</strong>.
+                </li>
+                <li>
+                  Successfully implemented object detection and recognition algorithms on the dataset collected through the NWash Project, seamlessly integrating them with a web application.
+                </li>
+                <li>
+                  Conducted extensive research on computer vision algorithms like YOLO and R-CNN to identify the most suitable solutions based on the NWash dataset requirements.
+                </li>
+              </ul>
+            </div>
+
+            <div id="wlit_teach" class="tabcontent">
+              <h5><strong>Technical Facilitator</strong></h5>
+              <h6>Women Leaders in Technology (Sept 2020 - Nov 2023)</h6>
+              <ul style="margin-top: 30px">
+                <li>
+                  Served as a Technical Facilitator for three consecutive batches of a <a href="https://wlit.org/programs/flagship-programs/" target="_blank">fellowship program</a> aimed at empowering women leaders in technology
+                </li>
+                <li>
+                  Instructed <strong>over 50 fellows</strong> in essential technical subjects, including <i>Git, Basic JavaScript concepts, Asynchronous JavaScript concepts, Express, and MongoDB </i>, during the fellowship bootcamp.
+                </li>
+                <li>
+                  Promoted to the Technical Lead in the latest batch, overseeing all technical sessions and projects, and teaching approximately half of the classes throughout the duration of the fellowship.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Professional Experience Section Ends -->
+
+      <!-- Internship Experience Section Begins -->
+      <div class="experience">
+        <h2 style="font-weight: bold">Internships</h2>
+        <div class="row exp-tabs">
+          <div class="list-group tab col-4" id="list-tab" role="tablist">
+            <button
+              class="list-group-item list-group-item-action tablinks active"
+              onclick="openCity(event, 'naamii')"
+            >
+              <strong>NLP Research Intern</strong><br />
+              NAAMII
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks"
+              onclick="openCity(event, 'card')"
+            >
+              <strong>Research and Development Intern</strong><br />
+              CARD
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks"
+              onclick="openCity(event, 'lis')"
+            >
+              <strong>Project Intern</strong><br />
+              LIS Nepal Pvt. Ltd.
             </button>
             <button
               class="list-group-item list-group-item-action tablinks"
@@ -536,6 +710,116 @@
               Unity Software Pvt. Ltd
             </button>
             <button
+            class="list-group-item list-group-item-action tablinks"
+            onclick="openCity(event, 'sochware')"
+          >
+            <strong>React Intern</strong><br />
+            Sochware
+          </button>
+          </div>
+
+          <div class="col-8">
+            <div id="naamii" class="tabcontent" style="display: block">
+              <h5><strong>NLP Research Intern</strong></h5>
+              <h6> <a href="https://www.naamii.org.np/" target="_blank"> NAAMII</a> (Oct 2022 - Apr 2023)</h6>
+              <ul style="margin-top: 30px">
+                <li>
+                  Researched the work done in Nepali NLP (Text Summarization, Nepali Transliteration and Nepali Text-to-Speech) under the supervision of <strong>Dr. Bishesh Khanal</strong>.
+                </li>
+                <li>
+                  Curated Nepali NLP datasets with the study of their features and limitations (Sentiment Analysis, Nepali Text-to-Speech and Machine Translation).
+                </li>
+              </ul>
+            </div>
+
+            <div id="card" class="tabcontent">
+              <h5><strong>Research and Development Intern</strong></h5>
+              <h6>CARD (Jul 2022 - May 2023)</h6>
+              <ul style="margin-top: 30px">
+                <li>
+                  Researched on Nepali Text-to-Speech Synthesis under the supervision of <strong>Dr. Basanta Joshi</strong> at the <strong>Center for Applied Research and Development (CARD)</strong> at the Institute of Engineering, Pulchowk Campus.
+                </li>
+                <li>
+                  Prepared a comprehensive Text-to-Speech dataset for the Nepali language and made it publicly available on <a href="https://openslr.elda.org/143/" target="_blank">OpenSLR</a>.
+                </li>
+                <li>
+                  Conducted numerous experiments with multiple models and speech synthesis techniques, and integrated the best result into a <a href="https://gitlab.com/shrutiaudio/shrutiapplication" target="_blank">mobile application</a>.
+                </li>
+                <li>
+                  Published our work at the 2nd Annual Meeting of the Special Interest Group on Under-resourced Languages(SIGUL 2023), a Satellite Workshop of Interspeech 2023 (<a href="https://sigul-2023.ilc.cnr.it/wp-content/uploads/2023/08/15_Paper-compressed.pdf" target="_blank">Khadka et al.</a>).
+                </li>
+              </ul>
+            </div>
+
+            <div id="lis" class="tabcontent">
+              <h5><strong>Project Intern</strong></h5>
+              <h6>LIS Nepal Pvt. Ltd (Aug 2022 - Jan 2023) </h6>
+              <ul style="margin-top: 30px">
+                <li>Major Project Mentorship</li>
+                <li> Was a part of Data engineering BootCamp, where I learnt SQL, ETL Framework</li>
+                <li>Did a final presentation updating the project progress</li>
+              </ul>
+            </div>
+
+            <div id="unity" class="tabcontent">
+              <h5><strong>Blockchain Intern</strong></h5>
+              <h6>Unity Software Pvt. Ltd (January 2022 - March 2022)</h6>
+              <ul style="margin-top: 30px">
+                <li>Worked on an in-house NFT Project</li>
+                <li>Wrote smart contracts using Solidity</li>
+                <li>Performed tests on the contract</li>
+                <li>Documented analysis of the project</li>
+              </ul>
+            </div>
+
+            <div id="sochware" class="tabcontent">
+              <h5><strong>React Intern</strong></h5>
+              <h6>Sochware (May 2021 - June 2021)</h6>
+              <ul style="margin-top: 30px">
+                <li>Learned important concepts of React Hooks and Redux</li>
+                <li>
+                  Worked on 'Krishiware', an app to ease the work of farmers in
+                  Nepal
+                </li>
+                <li>
+                  Built the validation and some parts of the dashboard using
+                  React and did state management with Redux
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Internship Experience Section Ends -->
+
+      <div class="experience">
+        <h2 style="font-weight: bold">Volunteer Experiences</h2>
+        <div class="row exp-tabs">
+          <div class="list-group tab col-4" id="list-tab" role="tablist">
+            <button
+              class="list-group-item list-group-item-action tablinks active"
+              onclick="openCity(event, 'github')"
+            >
+              <strong>Planning Coordinator</strong><br />
+              Github Field Day Nepal 2022 & 2023
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks"
+              onclick="openCity(event, 'zerone2020')"
+            >
+              <strong>Editor</strong><br />
+              The Zerone Magazine
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks"
+              onclick="openCity(event, 'hult')"
+            >
+              <strong>Event Manager</strong><br />
+              Hult Prize at IOE, Pulchowk Campus 2022
+            </button>
+            
+            <button
               class="list-group-item list-group-item-action tablinks"
               onclick="openCity(event, 'pg')"
             >
@@ -544,24 +828,10 @@
             </button>
             <button
               class="list-group-item list-group-item-action tablinks"
-              onclick="openCity(event, 'sochware')"
-            >
-              <strong>React Intern</strong><br />
-              Sochware
-            </button>
-            <button
-              class="list-group-item list-group-item-action tablinks"
               onclick="openCity(event, 'wlit')"
             >
               <strong>WLiT Fellow 2020/21</strong><br />
               Women Leaders in Technology
-            </button>
-            <button
-              class="list-group-item list-group-item-action tablinks"
-              onclick="openCity(event, 'zerone2020')"
-            >
-              <strong>Associate Editor</strong><br />
-              Zerone Magazine, 2020
             </button>
             <!-- <button
               class="list-group-item list-group-item-action tablinks"
@@ -576,13 +846,6 @@
             >
               <strong>Contributor</strong><br />
               Nepal Online School
-            </button>
-            <button
-              class="list-group-item list-group-item-action tablinks"
-              onclick="openCity(event, 'zerone2019')"
-            >
-              <strong>Editor</strong><br />
-              Zerone Magazine, 2019
             </button>
             <button
               class="list-group-item list-group-item-action tablinks"
@@ -603,10 +866,10 @@
           <div class="col-8">
             <div id="github" class="tabcontent" style="display: block">
               <h5><strong>Planning Coordinator</strong></h5>
-              <h6>Github Field Day Nepal 2022</h6>
+              <h6>Github Field Day Nepal 2022 & 2023</h6>
               <ul style="margin-top: 30px">
                 <li>
-                  Part of the Organizing Committee of the first GitHub Field Day
+                  Part of the Organizing Committee of the first and second GitHub Field Day
                   in Nepal
                 </li>
                 <li>Responsible for Planning the Main Event</li>
@@ -642,23 +905,10 @@
               </ul>
             </div>
 
-            <div id="unity" class="tabcontent">
-              <h5><strong>Blockchain Intern</strong></h5>
-              <h6>Unity Software Pvt. Ltd</h6>
-              <ul style="margin-top: 30px">
-                <li>January 2022 - March 2022</li>
-                <li>Worked on an in-house NFT Project</li>
-                <li>Wrote smart contracts using Solidity</li>
-                <li>Performed tests on the contract</li>
-                <li>Documented analysis of the project</li>
-              </ul>
-            </div>
-
             <div id="pg" class="tabcontent">
-              <h5><strong>Technical Manager</strong></h5>
+              <h5><strong>Technical Manager (September 2020 - June 2022)</strong></h5>
               <h6>Pulchowk Girls</h6>
               <ul style="margin-top: 30px">
-                <li>September 2020 - June 2022</li>
                 <li>Responsible for managing technical aspects in webinars</li>
                 <li>
                   Designed flyers, t-shirts and tokens of love for all events
@@ -680,22 +930,7 @@
               </ul>
             </div>
 
-            <div id="sochware" class="tabcontent">
-              <h5><strong>React Intern</strong></h5>
-              <h6>Sochware</h6>
-              <ul style="margin-top: 30px">
-                <li>May 2021 - June 2021</li>
-                <li>Learned important concepts of React Hooks and Redux</li>
-                <li>
-                  Worked on 'Krishiware', an app to ease the work of farmers in
-                  Nepal
-                </li>
-                <li>
-                  Built the validation and some parts of the dashboard using
-                  React and did state management with Redux
-                </li>
-              </ul>
-            </div>
+            
 
             <div id="wlit" class="tabcontent">
               <h5><strong>WLiT Fellow 2020/21</strong></h5>
@@ -730,18 +965,15 @@
             </div>
 
             <div id="zerone2020" class="tabcontent">
-              <h5><strong>Associate Editor</strong></h5>
-              <h6>Zerone Magazine, 2020</h6>
+              <h5><strong>Editor</strong></h5>
+              <h6>The Zerone Magazine</h6>
               <ul style="margin-top: 30px">
                 <li>
-                  Responsible for editing, proofreading, and shortlisting the
-                  incoming articles
+                  Served as the <strong>editor</strong>, <strong> associate editor</strong>, and <strong> managing editor</strong> for the Electronics and Computer Engineering department magazine, <strong> The Zerone</strong>, in the years 2019, 2020, and 2023, respectively.
                 </li>
                 <li>
-                  Wrote the Book Recommendation Series recommending one book
-                  each week for five weeks for the Zerone Website
+                  Responsible for managing junior editors and editing, proofreading, shortlisting incoming articles.
                 </li>
-                <li>Participated in the Weekly Writing Sessions</li>
               </ul>
             </div>
 
@@ -789,24 +1021,6 @@
               </div>
             </div>
 
-            <div id="zerone2019" class="tabcontent">
-              <h5><strong>Editor</strong></h5>
-              <h6>Zerone Magazine, 2019</h6>
-              <ul style="margin-top: 30px">
-                <li>
-                  Responsible for editing the articles assigned by the Magazine
-                  Coordinator
-                </li>
-                <li>
-                  Wrote club reports on a couple of existing college clubs
-                </li>
-                <li>
-                  The only first year student to be part of the editorial team
-                  that year
-                </li>
-              </ul>
-            </div>
-
             <div id="sxc" class="tabcontent">
               <h5><strong>President</strong></h5>
               <h6>St.Xavier's Literary Club, 2018</h6>
@@ -839,8 +1053,13 @@
           </div>
         </div>
       </div>
+      <!-- Internship Experience Section Ends -->
       <!-- Involvement Section Ends -->
-
+      
+      <!-- Conferences and Workshops Begin-->
+      <div class="conference"></div>
+      <!-- Conferences and Workshops End-->
+      
       <!-- Award Section Begins -->
       <div class="award">
         <h2 style="font-weight: bold">Scholarships and Awards</h2>
@@ -853,6 +1072,18 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>
+                Ncell Excellence Scholarship - Yearwise Top Female Student (4 times winner)
+              </td>
+              <td>Ncell</td>
+              <td>2019-2023</td>
+            </tr>
+            <tr>
+              <td>1st Runner Up - Gritfeat AI Health Hackathon</td>
+              <td>Gritfeat</td>
+              <td>2023</td>
+            </tr>
             <tr>
               <td>1st Runner Up - Hackathon for HealthCare</td>
               <td>BPKHIS and GDHUB</td>
@@ -870,18 +1101,12 @@
             </tr>
             <tr>
               <td>
-                Full Scholarship Recipient of NAAMI Winter School of AI, 2021
+                Full Scholarship Recipient of NAAMII Winter School of AI, 2021
               </td>
-              <td>NAAMI</td>
+              <td>NAAMII</td>
               <td>2022</td>
             </tr>
-            <tr>
-              <td>
-                Ncell Excellence Scholarship - Yearwise Top Female Student
-              </td>
-              <td>Ncell</td>
-              <td>2021</td>
-            </tr>
+            
             <tr>
               <td>Grace Hopper Celebration Student Scholar</td>
               <td>AnitaB.org</td>
@@ -890,13 +1115,6 @@
             <tr>
               <td>Women Leaders in Technology Fellowship 2020/21</td>
               <td>WLiT Nepal</td>
-              <td>2020</td>
-            </tr>
-            <tr>
-              <td>
-                Ncell Excellence Scholarship - Yearwise Top Female Student
-              </td>
-              <td>Ncell</td>
               <td>2020</td>
             </tr>
             <tr>
@@ -1579,7 +1797,7 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2021 Copyright: Supriya Khadka
+        © 2024 Copyright: Supriya Khadka
       </div>
       <!-- Copyright -->
     </footer>

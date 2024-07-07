@@ -451,6 +451,9 @@ h6 {
   padding-top: 10px;
 }
 
+p.card-text{
+  padding: 10px 0px;
+}
 .card-text a:hover {
   text-decoration: none;
 }

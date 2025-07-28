@@ -398,7 +398,7 @@
                     target="blank"
                     >Code & Data</a
                   > | <a
-                  href="https://osf.io/preprints/osf/69und"
+                  href="https://aclanthology.org/2025.gebnlp-1.6/"
                   target="blank"
                   >Paper</a>
                 </p>
@@ -654,7 +654,7 @@
       <!-- Involvement Section Begins -->
       <!-- Professional Experience Section Begins -->
       <div class="experience">
-        <h2 style="font-weight: bold">Professional Experiences</h2>
+        <h2 style="font-weight: bold">Research Experiences</h2>
         <div class="row exp-tabs">
           <div class="list-group tab col-4" id="list-tab" role="tablist">
             <button
@@ -666,25 +666,18 @@
             </button>
             <button
               class="list-group-item list-group-item-action tablinks1"
-              onclick="openCity1(event, 'diyoai')"
+              onclick="openCity1(event, 'card')"
             >
-              <strong>Conversational AI Engineer</strong><br />
-              Diyo.AI
+              <strong>Undergraduate Research Assistant</strong><br />
+              CARD
             </button>
             <button
               class="list-group-item list-group-item-action tablinks1"
-              onclick="openCity1(event, 'wlit_teach')"
+              onclick="openCity1(event, 'naamii')"
             >
-              <strong>Technical Facilitator</strong><br />
-              Women Leaders in Technology
-            </button>
-            <button
-              class="list-group-item list-group-item-action tablinks1"
-              onclick="openCity1(event, 'rara')"
-            >
-              <strong>Computer Vision Research Engineer</strong><br />
-              Rara Labs (Contract)
-            </button>
+              <strong>NLP Research Intern</strong><br />
+              NAAMII
+          </button>
           </div>
 
           <div class="col-8">
@@ -693,17 +686,81 @@
               <h6>Coventry University (September 2024 - <strong>present</strong>)</h6>
               <ul style="margin-top: 30px">
                 <li>
-                  Investigating generalization of biomedical pre-trained language models in clinical coding.
+                  Exploring the viability of LLMs in clinical coding for evidence extraction, code prediction, and code verification.
                 </li>
                 <li>
-                  Researching Large Language Models zero-shot and few-shot setups for explainability of clinical codes.
+                  Conducting quality and error analysis on existing clinical coding datasets using LLMs, in collaboration with professional clinical coders.
                 </li>
                 <li>
-                Analyzing performance and cost-effectiveness of different few-shot learning strategies for adapting pre-trained and large language models to the clinical coding task.
+                  Evaluating the performance and cost-effectiveness of different few-shot learning strategies for adapting PLMs and LLMs to the clinical coding tasks.
               </li>
               </ul>
             </div>
-            <div id="diyoai" class="tabcontent">
+            <div id="card" class="tabcontent">
+              <h5><strong>Research and Development Intern</strong></h5>
+              <h6>Center for Applied Research and Development (CARD) (Jul 2022 - May 2023)</h6>
+              <ul style="margin-top: 30px">
+                <li>
+                  Researched on Nepali Text-to-Speech Synthesis under the supervision of <strong>Dr. Basanta Joshi</strong> at CARD, Institute of Engineering, Pulchowk Campus.
+                </li>
+                <li>
+                  Prepared a comprehensive Text-to-Speech dataset for the Nepali language and made it publicly available on <a href="https://openslr.elda.org/143/" target="_blank">OpenSLR</a>.
+                </li>
+                <li>
+                  Conducted numerous experiments with multiple models and speech synthesis techniques, and integrated the best result into a <a href="https://gitlab.com/shrutiaudio/shrutiapplication" target="_blank">mobile application</a>.
+                </li>
+                <li>
+                  Published our work at the 2nd Annual Meeting of the Special Interest Group on Under-resourced Languages(SIGUL 2023), a Satellite Workshop of Interspeech 2023 (<a href="https://sigul-2023.ilc.cnr.it/wp-content/uploads/2023/08/15_Paper-compressed.pdf" target="_blank">Khadka et al.</a>).
+                </li>
+              </ul>
+            </div>
+
+            <div id="naamii" class="tabcontent" >
+              <h5><strong>NLP Research Intern</strong></h5>
+              <h6> <a href="https://www.naamii.org.np/" target="_blank"> NAAMII</a> (Oct 2022 - Apr 2023)</h6>
+              <ul style="margin-top: 30px">
+                <li>
+                  Researched the work done in Nepali NLP (Text Summarization, Nepali Transliteration and Nepali Text-to-Speech) under the supervision of <strong>Dr. Bishesh Khanal</strong>.
+                </li>
+                <li>
+                  Curated Nepali NLP datasets with the study of their features and limitations (Sentiment Analysis, Nepali Text-to-Speech and Machine Translation).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Professional Experience Section Ends -->
+
+      <!-- Internship Experience Section Begins -->
+      <div class="experience">
+        <h2 style="font-weight: bold">Professional Experiences</h2>
+        <div class="row exp-tabs">
+          <div class="list-group tab col-4" id="list-tab" role="tablist">
+            <button
+              class="list-group-item list-group-item-action tablinks2 active"
+              onclick="openCity2(event, 'diyoai')"
+            >
+              <strong>Conversational AI Engineer</strong><br />
+              Diyo.AI
+            </button>
+            <button
+              class="list-group-item list-group-item-action tablinks2"
+              onclick="openCity2(event, 'rara')"
+            ><strong>Computer Vision Research Engineer</strong><br />
+            Rara Labs (Contract)
+          </button>
+          <button
+          class="list-group-item list-group-item-action tablinks2"
+          onclick="openCity2(event, 'wlit_teach')"
+        >
+          <strong>Technical Facilitator</strong><br />
+          Women Leaders in Technology
+        </button>
+          </div>
+
+          <div class="col-8">
+            <div id="diyoai" class="tabcontent" style="display: block">
               <h5><strong>Conversational AI Engineer</strong></h5>
               <h6>Diyo.AI (May 2023 - August 2024)</h6>
               <ul style="margin-top: 30px">
@@ -718,7 +775,6 @@
                   5 finalists.</li>
               </ul>
             </div>
-
             <div id="rara" class="tabcontent">
               <h5><strong>Computer Vision Research Engineer</strong></h5>
               <h6>Rara Labs (Jan 2023 - Mar 2023) (Contract)</h6>
@@ -747,122 +803,6 @@
                 </li>
                 <li>
                   Promoted to the Technical Lead in the latest batch, overseeing all technical sessions and projects, and teaching approximately half of the classes throughout the duration of the fellowship.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Professional Experience Section Ends -->
-
-      <!-- Internship Experience Section Begins -->
-      <div class="experience">
-        <h2 style="font-weight: bold">Internships</h2>
-        <div class="row exp-tabs">
-          <div class="list-group tab col-4" id="list-tab" role="tablist">
-            <button
-              class="list-group-item list-group-item-action tablinks2 active"
-              onclick="openCity2(event, 'naamii')"
-            >
-              <strong>NLP Research Intern</strong><br />
-              NAAMII
-            </button>
-            <button
-              class="list-group-item list-group-item-action tablinks2"
-              onclick="openCity2(event, 'card')"
-            >
-              <strong>Research and Development Intern</strong><br />
-              CARD
-            </button>
-            <button
-              class="list-group-item list-group-item-action tablinks2"
-              onclick="openCity2(event, 'lis')"
-            >
-              <strong>Project Intern</strong><br />
-              LIS Nepal Pvt. Ltd.
-            </button>
-            <!-- <button
-              class="list-group-item list-group-item-action tablinks3"
-              onclick="openCity(event, 'unity')"
-            >
-              <strong>Blockchain Intern</strong><br />
-              Unity Software Pvt. Ltd
-            </button> -->
-            <button
-            class="list-group-item list-group-item-action tablinks2"
-            onclick="openCity2(event, 'sochware')"
-          >
-            <strong>React Intern</strong><br />
-            Sochware
-          </button>
-          </div>
-
-          <div class="col-8">
-            <div id="naamii" class="tabcontent" style="display: block">
-              <h5><strong>NLP Research Intern</strong></h5>
-              <h6> <a href="https://www.naamii.org.np/" target="_blank"> NAAMII</a> (Oct 2022 - Apr 2023)</h6>
-              <ul style="margin-top: 30px">
-                <li>
-                  Researched the work done in Nepali NLP (Text Summarization, Nepali Transliteration and Nepali Text-to-Speech) under the supervision of <strong>Dr. Bishesh Khanal</strong>.
-                </li>
-                <li>
-                  Curated Nepali NLP datasets with the study of their features and limitations (Sentiment Analysis, Nepali Text-to-Speech and Machine Translation).
-                </li>
-              </ul>
-            </div>
-
-            <div id="card" class="tabcontent">
-              <h5><strong>Research and Development Intern</strong></h5>
-              <h6>CARD (Jul 2022 - May 2023)</h6>
-              <ul style="margin-top: 30px">
-                <li>
-                  Researched on Nepali Text-to-Speech Synthesis under the supervision of <strong>Dr. Basanta Joshi</strong> at the <strong>Center for Applied Research and Development (CARD)</strong> at the Institute of Engineering, Pulchowk Campus.
-                </li>
-                <li>
-                  Prepared a comprehensive Text-to-Speech dataset for the Nepali language and made it publicly available on <a href="https://openslr.elda.org/143/" target="_blank">OpenSLR</a>.
-                </li>
-                <li>
-                  Conducted numerous experiments with multiple models and speech synthesis techniques, and integrated the best result into a <a href="https://gitlab.com/shrutiaudio/shrutiapplication" target="_blank">mobile application</a>.
-                </li>
-                <li>
-                  Published our work at the 2nd Annual Meeting of the Special Interest Group on Under-resourced Languages(SIGUL 2023), a Satellite Workshop of Interspeech 2023 (<a href="https://sigul-2023.ilc.cnr.it/wp-content/uploads/2023/08/15_Paper-compressed.pdf" target="_blank">Khadka et al.</a>).
-                </li>
-              </ul>
-            </div>
-
-            <div id="lis" class="tabcontent">
-              <h5><strong>Project Intern</strong></h5>
-              <h6>LIS Nepal Pvt. Ltd (Aug 2022 - Jan 2023) </h6>
-              <ul style="margin-top: 30px">
-                <li>Major Project Mentorship</li>
-                <li> Was a part of Data engineering BootCamp, where I learnt SQL, ETL Framework</li>
-                <li>Did a final presentation updating the project progress</li>
-              </ul>
-            </div>
-
-            <!-- <div id="unity" class="tabcontent">
-              <h5><strong>Blockchain Intern</strong></h5>
-              <h6>Unity Software Pvt. Ltd (January 2022 - March 2022)</h6>
-              <ul style="margin-top: 30px">
-                <li>Worked on an in-house NFT Project</li>
-                <li>Wrote smart contracts using Solidity</li>
-                <li>Performed tests on the contract</li>
-                <li>Documented analysis of the project</li>
-              </ul>
-            </div> -->
-
-            <div id="sochware" class="tabcontent">
-              <h5><strong>React Intern</strong></h5>
-              <h6>Sochware (May 2021 - June 2021)</h6>
-              <ul style="margin-top: 30px">
-                <li>Learned important concepts of React Hooks and Redux</li>
-                <li>
-                  Worked on 'Krishiware', an app to ease the work of farmers in
-                  Nepal
-                </li>
-                <li>
-                  Built the validation and some parts of the dashboard using
-                  React and did state management with Redux
                 </li>
               </ul>
             </div>
@@ -1145,7 +1085,7 @@
         <table class="table table-bordered award-table">
           <thead>
             <tr>
-              <th scope="col" style="width: 60%">Award/Scholarship</th>
+              <th scope="col" style="width: 60%">Scholarships</th>
               <th scope="col" style="width: 30%">Awarded By</th>
               <th scope="col" style="width: 10%">Year</th>
             </tr>
@@ -1166,33 +1106,12 @@
               <td>2019-2023</td>
             </tr>
             <tr>
-              <td>1st Runner Up - Gritfeat AI Health Hackathon</td>
-              <td>Gritfeat</td>
-              <td>2023</td>
-            </tr>
-            <tr>
-              <td>1st Runner Up - Hackathon for HealthCare</td>
-              <td>BPKHIS and GDHUB</td>
-              <td>2022</td>
-            </tr>
-            <tr>
-              <td>2nd Runner Up - OpenIMIS Datathon</td>
-              <td>Asia eHealth Network and IOE, Pulchowk Campus </td>
-              <td>2022</td>
-            </tr>
-            <tr>
-              <td>Hack-A-Week Winner (Category - FinTech)</td>
-              <td>LOCUS</td>
-              <td>2022</td>
-            </tr>
-            <tr>
               <td>
                 Full Scholarship Recipient of NAAMII Winter School of AI, 2021
               </td>
               <td>NAAMII</td>
               <td>2022</td>
             </tr>
-            
             <tr>
               <td>Grace Hopper Celebration Student Scholar</td>
               <td>AnitaB.org</td>
@@ -1202,13 +1121,50 @@
               <td>Women Leaders in Technology Fellowship 2020/21</td>
               <td>WLiT Nepal</td>
               <td>2020</td>
-            </tr>
-            <tr>
-              <td>Rajan Karki Memorial Outstanding Student Award</td>
-              <td>St. Xavier's College, Maitighar</td>
-              <td>2018</td>
-            </tr>
+            </tr>            
           </tbody>
+          
+          <thead>
+            <tr>
+              <th scope="col" style="width: 60%">Awards</th>
+              <th scope="col" style="width: 30%">Awarded By</th>
+              <th scope="col" style="width: 10%">Year</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Best Poster, 3rd Annual CSMM Conference</td>
+            <td>CSMM, Coventry University</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>1st Runner Up - Gritfeat AI Health Hackathon</td>
+            <td>Gritfeat</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>1st Runner Up - Hackathon for HealthCare</td>
+            <td>BPKHIS and GDHUB</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>2nd Runner Up - OpenIMIS Datathon</td>
+            <td>Asia eHealth Network and IOE, Pulchowk Campus </td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Hack-A-Week Winner (Category - FinTech)</td>
+            <td>LOCUS</td>
+            <td>2022</td>
+          </tr>
+          
+          
+          
+          
+          <tr>
+            <td>Rajan Karki Memorial Outstanding Student Award</td>
+            <td>St. Xavier's College, Maitighar</td>
+            <td>2018</td>
+          </tr>
         </table>
       </div>
       <!-- Award Section Ends -->

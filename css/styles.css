@@ -71,6 +71,7 @@ body {
 
 .navbar-toggler-icon {
   color: #f1f1f1;
+  pointer-events: none;
 }
 
 .dropbtn:hover,
@@ -87,16 +88,22 @@ body {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  width: max-content;
+  width: 100px;
+  max-width: 80vw;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  right: 0; 
 }
 
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   /* text-decoration: none; */
+  display: block;
+}
+
+.dropdown-content.show {
   display: block;
 }
 
@@ -678,7 +685,7 @@ hr {
 @media (max-width: 1199px) {
   .contentImage img {
     height: 250px;
-    width: 235px;
+    width: 250px;
   }
 
   .contentText h1 {
@@ -757,8 +764,8 @@ hr {
 
   .contentImage img {
     height: 250px;
-    width: 235px;
-    margin-left: 8%;
+    width: 250px;
+    /* margin-left: 8%; */
   }
 
   .aboutme {
@@ -794,6 +801,68 @@ hr {
   hr#hrId {
     display: block;
     margin: 40px 0px;
+  }
+
+  .exp-tabs {
+    /* Set display to flexbox with a column direction to stack the tabs and content */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .tab.col-4 {
+    /* Remove padding and margin for full-width on mobile */
+    padding: 0;
+    margin-left: 20px;
+    max-width: 90%;
+  }
+
+  .exp-tabs .col-8 {
+    /* Make the content section take up the full width */
+    max-width: 100%;
+  }
+
+  .tab button {
+    /* Make the tab buttons take up the full width */
+    float: none;
+    width: 100%;
+    text-align: left; /* Align text to the left for better readability */
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .tabcontent {
+    /* Add a top margin to separate the content from the tabs */
+    margin-top: 15px;
+  }
+
+  .tabcontent h5, h6 {
+    /* Reset text alignment for the content heading */
+    text-align: left;
+  }
+
+   /* Fix for the Android section layout */
+  .view.hide.hidden > div {
+    flex-direction: column; /* This will stack the two project cards */
+  }
+
+  .view.hide.hidden .card {
+    flex-direction: column; /* This will stack the image and text within each card */
+    max-width: 100%;
+    margin-bottom: 20px; /* Adds space between the stacked cards */
+  }
+
+  .view.hide.hidden .card-header {
+    text-align: center; /* Center the image */
+  }
+
+  .view.hide.hidden .card img {
+    width: 200px; /* Adjust image size for better visibility */
+  }
+
+  .view.hide.hidden .card-block {
+    text-align: center; /* Center the text for a clean look */
   }
 }
 

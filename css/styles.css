@@ -398,6 +398,10 @@ h6 {
   width: 500px;
 }
 
+.imagebox img.imagebox-img {
+  width: auto;
+}
+
 .caption {
   width: 500px;
   height: 250px;
@@ -669,9 +673,7 @@ h6 {
   outline: none;
 }
 
-hr {
-  display: none;
-}
+
 /******* Contact Us Ends ********/
 
 /****** Responsiveness ******/
@@ -777,6 +779,9 @@ hr {
     height: 250px;
   }
 
+  .imagebox img.imagebox-img {
+    width: auto;
+  }
   .caption {
     width: 440px;
     height: 250px;
@@ -871,6 +876,10 @@ hr {
   .imagebox img {
     width: 380px;
     height: 250px;
+  }
+
+  .imagebox img.imagebox-img {
+    width: auto;
   }
 
   .game img {

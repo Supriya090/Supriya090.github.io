@@ -29,10 +29,23 @@ function openCity3(evt, cityName) {
     const section = evt.currentTarget.closest('.experience');
     const tabcontent = section.querySelectorAll('.tabcontent');
     const tablinks = section.querySelectorAll('.tablinks3');
-    
+
     tabcontent.forEach((el) => (el.style.display = 'none'));
     tablinks.forEach((el) => el.classList.remove('active'));
-    
+
+    document.getElementById(cityName).style.display = 'block';
+    evt.currentTarget.classList.add('active');
+}
+
+// Function for Teaching Experience Tabs
+function openCity4(evt, cityName) {
+    const section = evt.currentTarget.closest('.experience');
+    const tabcontent = section.querySelectorAll('.tabcontent');
+    const tablinks = section.querySelectorAll('.tablinks4');
+
+    tabcontent.forEach((el) => (el.style.display = 'none'));
+    tablinks.forEach((el) => el.classList.remove('active'));
+
     document.getElementById(cityName).style.display = 'block';
     evt.currentTarget.classList.add('active');
 }
